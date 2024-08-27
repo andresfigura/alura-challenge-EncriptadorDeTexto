@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="Es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="Styles/style.css">
+</head>
+<body>
+    <header>
+        <img class="logoAlura" src="./Images/Logo.png" alt="Logo Alura">
+    </header>
+    <main>
+        <!-- <h1>Encriptador de texto</h1> -->
+        <section class="container">
+            <section>
+
+                <!-- <h2>Ingrese el texto aquí:</h2> -->
+                <textarea class="text-area" name="textoInput" cols="33" rows="20" id="textoInput" placeholder="Ingrese el texto aquí"></textarea>
+                <small> <img src="./Images/bi_exclamation-circle-fill.png" alt="Info"> Unicamente letras minusculas y sin acentos</small>
+                <div class="botones">
+                    <input class="btn active" id="btnEncode" onclick="activarEncode()" type="button" value="Encriptar">
+                    <input class="btn" id="btnDecode" onclick="activarDecode()" type="button" value="Desencriptar">
+                </div>
+
+            </section>
+
+            <section>
+                <!-- <h2>Verifique el texto*</h2> -->
+                <textarea class="mensaje-resultado" name="textoOutput" cols="33" rows="28" id="textoDecode"></textarea>
+                <div class="copyAction">
+                    <input class="btnCopiar" id="myTextarea" onclick="copiarTexto()" type="button" value="Copiar" style="display: block;">                    
+                    <p id="mensajeAlerta"></p>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer>
+        
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

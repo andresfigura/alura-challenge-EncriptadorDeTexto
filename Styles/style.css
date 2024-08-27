@@ -1,0 +1,136 @@
+:root{
+    --color-fondoPantalla: #0d1117;
+    --color-texto: #fff6e0;
+    --color-placeholder: rgba(255, 255, 255, 0.62);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: san;
+}
+body{
+    box-sizing: border-box;
+    background-color: var(--color-fondoPantalla) ;
+    color: var(--color-texto);
+}
+.logoAlura{
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 10%;
+}
+header{
+    margin-top: 15px;
+}
+.container{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-around;
+    padding: 0% 15%;
+    gap: 200px;
+    align-items: center;
+}
+.text-area{
+    background-color: var(--color-fondoPantalla);
+    color: var(--color-texto);
+    border: none;
+    margin-top: 25px;
+    text-transform: lowercase;
+    border-radius: 25px;
+    padding: 10px;
+    font-size: 32px;
+    resize: none;    
+}
+.text-area:focus{
+    outline: none;
+}
+::placeholder{
+    color: var(--color-placeholder);
+}
+.botones{
+    display: flex;
+    margin-top: 20px;
+    /* gap: 20px; */
+}
+#btnEncode{
+    font-family: sans-serif;
+    font-size: 30px;
+    background-color: #0a3871;
+    border: solid 1px #0a3871;
+    border-radius: 25px;
+    color: var(--color-texto);
+    cursor: pointer;
+    height: 67px;
+    width: 280px;
+}
+#btnDecode{
+    font-family: sans-serif;
+    font-size: 30px;
+    background-color: #d8dfe8;
+    border: 1px solid #0a3871;
+    border-radius: 25px;
+    color: #0a3871;
+    cursor: pointer;
+    height: 67px;
+    width: 280px;
+    margin-left: 20px;
+}
+.mensaje-resultado{
+    background-color: var(--color-fondoPantalla);
+    background-image: url(/Images/Muñeco.png);
+    padding: 15px;
+    color: var(--color-texto);
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 25px;
+    background-position-x: 50%;
+    background-position-y: 25%;
+    background-size: 480px;
+    font-size: 32px;
+    resize: none;
+    border: solid white;
+}
+.mensaje-resultado:focus{
+    outline: none;
+}
+
+.btnCopiar{
+    font-family: sans-serif;
+    font-size: 27px;
+    background-color: #d8dfe8;
+    border: 1px solid #0a3871;
+    border-radius: 25px;
+    color: #0a3871;
+    cursor: pointer;
+    height: 48px;
+    width: 124px;
+    margin: 0px auto;
+}
+#mensajeAlerta{
+    text-align: center;
+    font-size: 27px;
+}
+
+.copyAction{
+    position: relative;
+    bottom: 180px;
+}
+small{
+    display: block;
+    font-size: 20px;
+    color: var(--color-texto);
+}
+/* h1{
+    text-align: center;
+    margin-top: 20px;
+} */
+
+
+.btn.active{
+    transform: scale(0.8);
+    box-shadow: 0px 0px 17px 14px #4b58a2;
+}
